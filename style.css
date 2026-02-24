@@ -5,7 +5,12 @@
   font-family: Roboto, 'Segoe UI';
 }
 
-.navbar, .nav-link {
+
+.navbar, .nav-link{
+  color: grey;
+}
+
+.navbar .nav-link:hover {
   color: white;
 }
 
@@ -23,6 +28,10 @@ body.authenticated .role-logged-out {
 
 body.is-admin .role-admin {
   display: block;
+}
+
+body:not(.is-admin) .admin-only {
+  display: none !important;
 }
 
 .page {
